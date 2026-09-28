@@ -64,6 +64,14 @@ const Navbar = () => {
         <Link to="/how-it-works" className="hover:text-red-600 transition-colors">HOW IT WORKS</Link>
         <Link to="/pricing" className="hover:text-red-600 transition-colors">PRICING</Link>
         
+        {/* New Cancerbriefs link that doesn't redirect */}
+        <span 
+          onClick={(e) => e.preventDefault()} 
+          className="hover:text-red-600 transition-colors cursor-pointer"
+        >
+          CANCERBRIEFS
+        </span>
+
         {/* Permanent link to Hospital Partners page */}
         <Link to="/partners" className="hover:text-red-600 transition-colors">
           FOR HOSPITAL PARTNERS
@@ -94,6 +102,15 @@ const Navbar = () => {
           <Link to="/about" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>ABOUT US</Link>
           <Link to="/how-it-works" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>HOW IT WORKS</Link>
           <Link to="/pricing" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>PRICING</Link>
+          
+          {/* New Cancerbriefs link that doesn't redirect (mobile) */}
+          <span 
+            onClick={(e) => { e.preventDefault(); closeMenu(); }} 
+            className="hover:text-red-600 transition-colors w-full cursor-pointer"
+          >
+            CANCERBRIEFS
+          </span>
+
           <Link to="/partners" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>FOR HOSPITAL PARTNERS</Link>
           
           <div className="pt-2">
