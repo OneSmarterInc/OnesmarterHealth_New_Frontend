@@ -11,7 +11,9 @@ import SignUpPage from './components/SignUpPage';
 import LoginPage from './components/LoginPage';
 import PrivacyPolicyPage from './components/PrivacyPolicyPage';
 import TermsPage from './components/TermsPage';
-import HospitalPartnersPage from './components/HospitalPartnersPage'; // Added import
+import HospitalPartnersPage from './components/HospitalPartnersPage';
+import BlogPage from './components/BlogPage';
+import ArticleDetailPage from './components/ArticleDetailPage'; // <-- Import added
 
 // Dashboard Components
 import AdminDashboard from './components/admin/AdminDashboard';
@@ -26,7 +28,9 @@ const AppRoutes = () => {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/how-it-works" element={<HowItWorksPage />} />
       <Route path="/pricing" element={<PricingPage />} />
-      <Route path="/partners" element={<HospitalPartnersPage />} /> {/* Added route */}
+      <Route path="/partners" element={<HospitalPartnersPage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/blog/:id" element={<ArticleDetailPage />} /> {/* <-- Route added */}
       <Route path="/signup" element={<SignUpPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/privacy" element={<PrivacyPolicyPage />} />
