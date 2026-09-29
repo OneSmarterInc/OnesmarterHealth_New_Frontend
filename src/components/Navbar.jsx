@@ -68,7 +68,6 @@ const Navbar = () => {
         <Link to="/" className="hover:text-red-600 transition-colors">HOME</Link>
         <Link to="/about" className="hover:text-red-600 transition-colors">ABOUT US</Link>
         <Link to="/how-it-works" className="hover:text-red-600 transition-colors">HOW IT WORKS</Link>
-        <Link to="/pricing" className="hover:text-red-600 transition-colors">PRICING</Link>
         
         {/* Cancerbriefs link that opens in a new tab */}
         <span 
@@ -107,7 +106,6 @@ const Navbar = () => {
           <Link to="/" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>HOME</Link>
           <Link to="/about" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>ABOUT US</Link>
           <Link to="/how-it-works" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>HOW IT WORKS</Link>
-          <Link to="/pricing" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>PRICING</Link>
           
           {/* Cancerbriefs link (mobile) that opens in a new tab */}
           <span 
