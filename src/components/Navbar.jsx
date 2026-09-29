@@ -1,4 +1,3 @@
-// frontend/src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -12,6 +11,13 @@ const Navbar = () => {
     localStorage.removeItem('refresh_token');
     setIsMenuOpen(false);
     navigate('/login');
+  };
+
+  const handleCancerbriefsClick = (e) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    // Opens Cancerbriefs in a new tab securely
+    window.open('https://cancerbriefs-frontend.vercel.app/', '_blank', 'noopener,noreferrer');
   };
 
   const scrollToPatientSection = (e) => {
@@ -64,9 +70,9 @@ const Navbar = () => {
         <Link to="/how-it-works" className="hover:text-red-600 transition-colors">HOW IT WORKS</Link>
         <Link to="/pricing" className="hover:text-red-600 transition-colors">PRICING</Link>
         
-        {/* New Cancerbriefs link that doesn't redirect */}
+        {/* Cancerbriefs link that opens in a new tab */}
         <span 
-          onClick={(e) => e.preventDefault()} 
+          onClick={handleCancerbriefsClick} 
           className="hover:text-red-600 transition-colors cursor-pointer"
         >
           CANCERBRIEFS
@@ -103,9 +109,9 @@ const Navbar = () => {
           <Link to="/how-it-works" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>HOW IT WORKS</Link>
           <Link to="/pricing" className="hover:text-red-600 transition-colors w-full" onClick={closeMenu}>PRICING</Link>
           
-          {/* New Cancerbriefs link that doesn't redirect (mobile) */}
+          {/* Cancerbriefs link (mobile) that opens in a new tab */}
           <span 
-            onClick={(e) => { e.preventDefault(); closeMenu(); }} 
+            onClick={handleCancerbriefsClick} 
             className="hover:text-red-600 transition-colors w-full cursor-pointer"
           >
             CANCERBRIEFS
