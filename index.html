@@ -2,16 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-   <link rel="icon" type="image/png" href="/assets/logo.png" />
-    
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
+
     <style>
       /* CSS to make any image a perfect circle */
       .circle-logo {
-        width: 120px;         /* Set width */
-        height: 120px;        /* Set height to match width */
-        border-radius: 50%;   /* This makes it a circle */
-        object-fit: cover;    /* Prevents the image from stretching */
-        border: 3px solid #161412; /* Optional: adds a nice border from your theme */
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #161412;
       }
 
       /* CSS to center the loading image on the screen */
@@ -20,13 +26,16 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #F3EEE3; /* Your theme's background color */
+        background-color: #f3eee3;
       }
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OneSmarterHelth Care</title>
+    </style>
+
+    <title>OneSmarter Health Care</title>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
