@@ -192,14 +192,14 @@ const HomePage = () => {
 
             <div className="flex flex-wrap items-center gap-6">
               <a 
-                href="https://wa.me/9322083516?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20my%20case." 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-[#173a38] hover:bg-[#112a29] text-white font-medium px-6 py-3.5 rounded shadow flex items-center space-x-3 transition-colors"
-              >
-                <span>WhatsApp +91 9322083516</span>
-                <span className="text-xs" aria-hidden="true">↗</span>
-              </a>
+  href="https://wa.me/18177146241?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20my%20case." 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="bg-[#173a38] hover:bg-[#112a29] text-white font-medium px-6 py-3.5 rounded shadow flex items-center space-x-3 transition-colors"
+>
+  <span>WhatsApp +1 (817) 714-6241</span>
+  <span className="text-xs" aria-hidden="true">↗</span>
+</a>
 
               <a 
                 href="mailto:PatientCare@onesmarterhealthweb.com?subject=Inquiry%20About%20My%20Case"
