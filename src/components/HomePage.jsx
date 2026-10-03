@@ -190,23 +190,18 @@ const HomePage = () => {
               Email or WhatsApp our patient coordinator. You can share reports or photos when you are ready. A short message is enough to begin, and the coordinator can reply there or arrange a call. The initial conversation and follow-up calls are free while you decide whether to proceed with a paid service.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6">
-              <a 
-  href="https://wa.me/18177146241?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20my%20case." 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="bg-[#173a38] hover:bg-[#112a29] text-white font-medium px-6 py-3.5 rounded shadow flex items-center space-x-3 transition-colors"
->
-  <span>WhatsApp +1 (817) 714-6241</span>
-  <span className="text-xs" aria-hidden="true">↗</span>
-</a>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+              
+              {/* WhatsApp Text Block (No href, prevents popup) */}
+              <div className="bg-[#173a38] text-white font-medium px-6 py-3.5 rounded shadow flex items-center space-x-3 select-all cursor-text">
+                <span>WhatsApp: +1 (817) 714-6241</span>
+              </div>
 
-              <a 
-                href="mailto:PatientCare@onesmarterhealthweb.com?subject=Inquiry%20About%20My%20Case"
-                className="text-gray-900 font-semibold underline underline-offset-4 hover:text-[#173a38] transition-colors text-base"
-              >
-                Email PatientCare@onesmarterhealthweb.com
-              </a>
+              {/* Email Text Block (No href, prevents popup) */}
+              <div className="text-gray-900 font-semibold text-base select-all cursor-text py-2">
+                Email: PatientCare@onesmarterhealthweb.com
+              </div>
+
             </div>
           </div>
 
